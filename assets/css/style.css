@@ -279,8 +279,10 @@ body::-webkit-scrollbar {
 }
 
 .mob-dot {
-    height: .65em;
-    width: .65em;
+    height: 1em;
+    width: 1em;
+/*     height: .65em;
+    width: .65em; */
     border-radius: 2em;
     border: .18em solid var(--color-light);
     transition: 1s ease;
