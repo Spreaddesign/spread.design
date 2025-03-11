@@ -257,6 +257,10 @@ body::-webkit-scrollbar {
     animation: textload 1s linear;
 }
 
+.mob-chevron {
+    display: block;
+}
+
 .mob-arrow-left,
 .mob-arrow-right {
     position: absolute;
