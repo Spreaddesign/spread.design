@@ -260,8 +260,8 @@ body::-webkit-scrollbar {
 .mob-arrow-left,
 .mob-arrow-right {
     position: absolute;
-    height: 2em;
-    width: 2em;
+    height: 1.25em;
+    width: 1.25em;
     top: 40vh;
     opacity: 50%;
 }
