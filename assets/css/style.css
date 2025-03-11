@@ -383,7 +383,7 @@ body::-webkit-scrollbar {
 }
 .mob-buttons {
     display: flex;
-/*     flex-wrap: wrap; */
+    flex-wrap: wrap;
     width: 350px;
 }
 
