@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread.design</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-mob">
+            <img src="/assets/icons/logo.gif" alt="Spread Logo">
+            <div class="nav-menu-mob">
+                <div class="mob-menu-icon" onclick="mobmenuclick()">
+                    <div class="mob-icon-left"></div>
+                    <div class="mob-icon-right"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mob-landscape-mode">
+            <img class="mob-limg" src="/assets/icons/mobile-phone.svg" alt="Mobile Phone Switch">
+            <h1 class="mob-lheading">Please rotate your device to portrait mode!</h1>
+        </div>
+        <div class="main-mob">
+            <div class="mobcontainer mobsection1">
+                <div class="mob-cards">
+                    <div id="mob-card-1" class="mob-card" ondragstart="dragcard1()">
+                        <img id="mob-img-1" class="mob-img" src="/assets/images/GOX-mob-crop.png" alt="GOX">
+                        <img id="mob-sub-img-1" class="mob-sub-img" src="/assets/images/GOX-mob.png" alt="GOX">
+                        <div id="mob-subcard-1" class="mob-sub-card">
+                            <div class="mob-texts">
+                                <h1 class="mob-heading">The New<br>Landing Page<br>for Goa</h1>
+                                <p class="mob-text">More than an airport, Goa’s new gateway is redefining the travel experience. Designed for seamless transitions, immersive ...</p>
+                            </div>
+                            <img src="/assets/icons/arrow-front.svg" alt="Arrow-Front" class="mob-arrow-front" id="mob-arrow-1" onclick="mobcardclick1()">
+                        </div>
+                        <div id="mob-submaincard-1" class="mob-sub-main-card" onclick="mobmaincardclick1()">
+                            <h1 class="mob-sub-heading">Transforming<br>First Impressions<br>at GOX</h1>
+                            <p class="mob-sub-text"><b class="mob-text-bold">4,406,087 ( 563.4% )</b> passengers choose GOX every year.<br><b class="mob-text-bold">24-month CX</b> transformation with Spread Design Studio.<br><b class="mob-text-bold">Passenger satisfaction</b> scores at an all-time high.<br><b class="mob-text-bold">New industry benchmarks</b>—airports across India are following suit.<br><b class="mob-text-bold">Seamless transitions</b> from airside to cityside, designed with precision.</p>
+                        </div>
+                        <img src="/assets/icons/arrow-back.svg" alt="Arrow-Back" class="mob-arrow-back" id="mob-sub-arrow-1" onclick="mobcardhide1()">
+                    </div>
+                    <div id="mob-card-2" class="mob-card" ondragstart="dragcard2()">
+                        <img id="mob-img-2" class="mob-img" src="/assets/images/Organic-Millets-mob-crop.png" alt="Organic Millets">
+                        <img id="mob-sub-img-2" class="mob-sub-img" src="/assets/images/Organic-Millets-mob.png" alt="Organic Millets">
+                        <div id="mob-subcard-2" class="mob-sub-card">
+                            <div class="mob-texts">
+                                <h1 class="mob-heading">Millets:<br>The Future of Food,<br>Rooted in Tradition</h1>
+                                <p class="mob-text">From ancient grains to modern nutrition—India’s Millet Revolution is reshaping food culture. Backed by government initiatives and global sustainability goals, millets...</p>
+                            </div>
+                            <img src="/assets/icons/arrow-front.svg" alt="Arrow-Front" class="mob-arrow-front" id="mob-arrow-2" onclick="mobcardclick2()">
+                        </div>
+                        <div id="mob-submaincard-2" class="mob-sub-main-card" onclick="mobmaincardclick2()">
+                            <h1 class="mob-sub-heading">India’s Millet Movement:<br>A New Food Paradigm</h1>
+                            <p class="mob-sub-text">2023: The <b class="mob-text-bold">UN declared the ‘International Year of Millets’</b>, led by India.<br><b class="mob-text-bold">60% less water consumption</b> than rice and wheat.<br><b class="mob-text-bold">3X more nutrition</b> with higher protein, fiber, and micronutrients.<br><b class="mob-text-bold">₹8,500 crore investment</b> to boost millet production & global exports.<br>Leading food brands & restaurants are <b class="mob-text-bold">adopting millet-based innovations.</b></p>
+                        </div>
+                        <img src="/assets/icons/arrow-back.svg" alt="Arrow-Back" class="mob-arrow-back" id="mob-sub-arrow-2" onclick="mobcardhide2()">
+                    </div>
+                    <div id="mob-card-3" class="mob-card" ondragstart="dragcard3()">
+                        <img id="mob-img-3" class="mob-img" src="/assets/images/Cochin-Airport-mob-crop.png" alt="Cochin Airport">
+                        <img id="mob-sub-img-3" class="mob-sub-img" src="/assets/images/Cochin-Airport-mob.png" alt="Cochin Airport">
+                        <div id="mob-subcard-3" class="mob-sub-card">
+                            <div class="mob-texts">
+                                <h1 class="mob-heading">Cochin Airport:<br>A New Era in<br>Travel Experience</h1>
+                                <p class="mob-text">Redesigned for the future—where tradition meets seamless mobility. Cochin Airport’s new experience blueprint enhances passenger flow...</p>
+                            </div>
+                            <img src="/assets/icons/arrow-front.svg" alt="Arrow-Front" class="mob-arrow-front" id="mob-arrow-3" onclick="mobcardclick3()">
+                        </div>
+                        <div id="mob-submaincard-3" class="mob-sub-main-card" onclick="mobmaincardclick3()">
+                            <h1 class="mob-sub-heading">Transforming CIAL:<br>India’s First Solar-Powered<br>Airport, Now Reimagined</h1>
+                            <p class="mob-sub-text"><b class="mob-text-bold">100% solar-powered</b>—the world's first airport to run fully on renewable energy.<br><b class="mob-text-bold">50M+ passengers</b> served since its inception.<br>New design & experience strategy focused on ease of navigation and <b class="mob-text-bold">cultural storytelling.</b><br><b class="mob-text-bold">20% faster check-ins</b> with intuitive digital wayfinding.<br>A model for airport sustainability,<b class="mob-text-bold">inspiring global aviation hubs.</b></p>
+                        </div>
+                        <img src="/assets/icons/arrow-back.svg" alt="Arrow-Back" class="mob-arrow-back" id="mob-sub-arrow-3" onclick="mobcardhide3()">
+                    </div>
+                </div>
+                <div class="mob-dots">
+                    <div id="md-dot-1" class="mob-dot md-active"></div>
+                    <div id="md-dot-2" class="mob-dot"></div>
+                    <div id="md-dot-3" class="mob-dot"></div>
+                </div>
+                <div class="mob-main-cards">
+                    <div id="mob-maincard-1" class="mob-main-card">
+                        <img src="/assets/icons/arrow-back-black.svg" alt="Arrow-Back" class="mob-main-arrow-back" id="mob-main-arrow-1" onclick="mobmaincardhide1()">
+                        <p class="mob-main-heading">Elevating Travel</p>
+                        <h1 class="mob-main-sub-heading">The GOX<br>Experience Blueprint</h1>
+                        <div class="mob-buttons">
+                            <div class="mob-button">
+                                <img src="/assets/icons/share.svg" alt="Share button">
+                                <span>Share</span>
+                            </div>
+                            <a href="/assets/images/GOX-mob-crop.png" download="gox-mob.png" class="mob-button">
+                                <img src="/assets/icons/download.svg" alt="Download button">
+                                <span>Download</span>
+                            </a>
+                            <div class="mob-button">
+                                <img src="/assets/icons/print.svg" alt="Print Button">
+                                <span>Print</span>
+                            </div>
+                        </div>
+                        <p class="mob-main-text">Over the past two years, Spread has been at the forefront of redefining airport experiences in India. At GOX, we created an experience-led transformation that makes travel seamless, intuitive, and deeply connected to Goa’s vibrant culture. From the moment a traveller arrives, every touchpoint is designed to enhance convenience—from biometric check-ins to wayfinding that feels second nature. We’ve integrated Goan architectural elements, digital concierge services, and an optimised flow that cuts wait times, ensuring that travellers experience efficiency with a sense of place. More than just an airport, GOX is setting the new standard for Indian aviation infrastructure. As airports across India look to enhance passenger experience, the GOX model is becoming the blueprint for the future. Our data-driven approach, grounded in behavioural insights, has redefined expectations for how airports function—not just as transit hubs but as gateways to destinations.</p>
+                    </div>
+                    <div id="mob-maincard-2" class="mob-main-card">
+                        <img src="/assets/icons/arrow-back-black.svg" alt="Arrow-Back" class="mob-main-arrow-back" id="mob-main-arrow-1" onclick="mobmaincardhide2()">
+                        <p class="mob-main-heading">The Millet Economy</p>
+                        <h1 class="mob-main-sub-heading">How India is Leading<br>a Global Food<br>Transformation</h1>
+                        <div class="mob-buttons">
+                            <div class="mob-button">
+                                <img src="/assets/icons/share.svg" alt="Share button">
+                                <span>Share</span>
+                            </div>
+                            <a href="/assets/images/Organic-Millets-mob-crop.png" download="organic-millets.png" class="mob-button">
+                                <img src="/assets/icons/download.svg" alt="Download button">
+                                <span>Download</span>
+                            </a>
+                            <div class="mob-button">
+                                <img src="/assets/icons/print.svg" alt="Print Button">
+                                <span>Print</span>
+                            </div>
+                        </div>
+                        <p class="mob-main-text">Millets are no longer a niche; they are the future. Once considered a farmer’s grain, they are now at the forefront of sustainable agriculture, nutrition, and economic growth. With India leading the global push for millets, the shift is not just about food—it’s about climate resilience, food security, and market innovation. From high-end restaurants to school lunches, millets are reshaping the way India eats. With policies supporting production and brands integrating millet-based products, the transformation is happening at an unprecedented scale. Whether it’s urban consumers adopting millet-based diets or farmers gaining access to better pricing and market linkages, the movement is gaining momentum.</p>
+                    </div>
+                    <div id="mob-maincard-3" class="mob-main-card">
+                        <img src="/assets/icons/arrow-back-black.svg" alt="Arrow-Back" class="mob-main-arrow-back" id="mob-main-arrow-1" onclick="mobmaincardhide3()">
+                        <p class="mob-main-heading">Designing Tomorrow’s Airports</p>
+                        <h1 class="mob-main-sub-heading">The Cochin Blueprint</h1>
+                        <div class="mob-buttons">
+                            <div class="mob-button">
+                                <img src="/assets/icons/share.svg" alt="Share button">
+                                <span>Share</span>
+                            </div>
+                            <a href="/assets/images/Cochin-Airport-mob-crop.png" download="cochin-airport.png" class="mob-button">
+                                <img src="/assets/icons/download.svg" alt="Download button">
+                                <span>Download</span>
+                            </a>
+                            <div class="mob-button">
+                                <img src="/assets/icons/print.svg" alt="Print Button">
+                                <span>Print</span>
+                            </div>
+                        </div>
+                        <p class="mob-main-text">Cochin International Airport has always been a pioneer in sustainable aviation, but now, it’s raising the bar on passenger experience. In partnership with Spread, the redesign focuses on seamless movement, digital touchpoints, and a distinct Kerala-inspired ambiance. Our approach combines architectural heritage with future-ready efficiency—ensuring passengers not only move faster but experience a uniquely local welcome. From biometric-enabled boarding to dynamic signage, the airport adapts to real-time passenger needs while maintaining the warmth of Kerala’s hospitality. As more airports look to balance growth, sustainability, and experience, Cochin’s new model serves as a benchmark for the next generation of aviation hubs.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cursor" class="cursor"></div>
+        </div>
+    </main>
+</body>
+</html>

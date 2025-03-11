@@ -1,0 +1,520 @@
+@import url(/assets/fonts/roboto/roboto.css);
+
+:root {
+    --color-primary: #5d15c1;
+    --color-dark: #000;
+    --color-light: #fff;
+    --roboto: 'Roboto';
+}
+
+* {
+    cursor: none !important;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--color-light);
+    font-family: var(--roboto);
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Custom Cursor */
+.cursor {
+    position: fixed;
+    height: 1.4em;
+    width: 1.4em;
+    transition: .1s;
+    border-radius: 2em;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 500 !important;
+    opacity: 70%;
+    background: var(--color-primary);
+}
+/* Custom Cursor */
+
+/* navbar mobile */
+.nav-mob {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    padding: 0 1em 0 1em;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: var(--color-light);
+    /* border: .01em solid blue; */
+}
+
+.nav-mob img {
+    height: 1.2em;
+}
+
+.nav-menu-mob {
+    display: flex;
+    justify-content: center;
+    height: 2.5em;
+    width: 2.5em;
+    /* border: .01em solid red; */
+    overflow: hidden;
+}
+
+.mob-menu-icon {
+    display: flex;
+    height: 2.5em;
+    width: 2.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.mob-icon-left {
+    position: relative;
+    top: -.25em;
+    left: .1em;
+    height: 1.5em;
+    border-left: .1em solid var(--color-dark);
+    transform: rotate(35deg);
+    transition: 1s ease;
+}
+
+.mob-icon-right {
+    position: relative;
+    top: .25em;
+    left: .1em;
+    height: 1.5em;
+    border-right: .1em solid var(--color-dark);
+    transform: rotate(35deg);
+    transition: 1s ease;
+}
+
+.toggleLeft {
+    height: 1em;
+    top: 0;
+    left: .5em;
+}
+
+.toggleLeft-alt {
+    left: .1em;
+    transform: rotate(-45deg);
+    transition-delay: .25s;
+}
+
+.toggleRight {
+    height: 1em;
+    top: 0;
+    left: .5em;
+}
+
+.toggleRight-alt {
+    left: 0;
+    transform: rotate(45deg);
+    transition-delay: .25s;
+}
+
+@media screen and (max-width: 576px) {
+    .main {
+        display: none;
+    }
+    .main-mob {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    .mob-landscape-mode {
+        display: flex !important;
+    }
+    .main {
+        display: none !important;
+    }
+    .main-mob {
+        display: none !important;
+    }
+}
+
+.mob-landscape-mode {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+}
+
+.mob-limg {
+    height: 8em;
+    animation: mobile-rotate 2.5s steps(50) infinite;
+    transition: 2.5s ease-out;
+}
+
+.mob-lheading {
+    font-size: 2.25em;
+    color: var(--color-dark);
+}
+
+@keyframes mobile-rotate {
+    20% {
+        transform: rotate(-96deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Main - Mobile */
+.main-mob {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mobcontainer {
+    height: auto;
+    width: auto;
+}
+
+.mobsection1 {
+    position: relative;
+    top: 4.8em;
+    /* padding: 74.5px 0 0 0; */
+}
+
+.mob-cards {
+    display: flex;
+    position: relative;
+}
+
+.mob-card {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden !important;
+    /* height: auto;
+    width: 100%; */
+}
+
+.mob-card:nth-child(1) {
+    display: block;
+}
+
+.mob-img {
+    height: auto;
+    width: 100%;
+    user-select: none !important;
+    transition: 2s ease;
+}
+
+.mob-sub-card {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--color-light);
+    padding: 0 40px 64px 40px;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none !important;
+}
+
+.mob-arrow-front {
+    position: relative;
+    height: 1.5em;
+    width: 1.5em;
+    animation: iconload 1s linear;
+    /* transition: 1s ease; */
+    /* height: 1.8em;
+    width: 1.8em; */
+    /* position: fixed;
+    bottom: 10em;
+    right: 2em; */
+}
+
+.mob-texts {
+    width: 251px;
+}
+
+.mob-heading {
+    position: relative;
+    font-weight: 100;
+    font-size: 24px;
+    animation: headingload 1s linear;
+    /* width: 180px; */
+}
+
+.mob-text {
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    width: 280px;
+    animation: textload 1s linear;
+}
+
+.mob-dots {
+    display: flex;
+    position: absolute;
+    top: 85vh;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.mob-dot {
+    height: 1em;
+    width: 1em;
+    border-radius: 2em;
+    border: .18em solid var(--color-light);
+    transition: 1s ease;
+}
+
+.md-active {
+    background: var(--color-light);
+}
+
+.mob-dot:nth-child(1),
+.mob-dot:nth-child(2) {
+    margin-right: .5em;
+}
+
+.mobRotate {
+    transform: rotate(-45deg);
+}
+
+.mob-sub-img {
+    display: none;
+    height: auto;
+    width: 100%;
+    user-select: none !important;
+    transition: 2s ease;
+}
+
+.mob-sub-main-card {
+    display: none;
+    padding: 2px 40px 40px 40px;
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.mob-sub-heading {
+    position: relative;
+    font-weight: 100;
+    font-size: 24px;
+    animation: subheadingload 1s linear;
+}
+
+.mob-sub-text {
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    animation: subtextload 1s linear;
+}
+
+.mob-text-bold {
+    font-weight: 700;
+}
+
+.mob-arrow-back {
+    display: none;
+    position: absolute;
+    top: 2em;
+    left: 2.5em;
+    height: 1.5em;
+    width: 1.5em;
+    animation: iconloadtop 1s linear;
+}
+
+.mob-main-card {
+    display: none;
+    position: relative;
+    padding: 0 40px 40px 40px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.mob-main-card::-webkit-scrollbar {
+    display: none !important;
+}
+
+.mob-main-arrow-back {
+    position: absolute;
+    /* top: 2em; */
+    top: 1em;
+    right: 2.5em;
+    height: 1.5em;
+    width: 1.5em;
+    animation: iconloadright 1s linear;
+}
+
+.mob-main-heading {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: -16px;
+}
+
+.mob-main-sub-heading {
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.mob-main-text {
+    padding-top: 20px;
+    font-size: 16px;
+}
+.mob-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mob-button {
+    display: flex;
+    height: 2.5em;
+    width: 8.8em;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-dark);
+    border: .1em solid var(--color-dark);
+}
+
+.mob-button:nth-child(1),
+.mob-button:nth-child(2) {
+    margin-right: .7em;
+}
+
+.mob-button:nth-child(1) {
+    margin-bottom: .7em;
+}
+
+.mob-button a {
+    text-decoration: none;
+}
+
+.mob-button img {
+    height: 24px;
+    width: 24px;
+    margin-right: .5em;
+    /* margin-right: .85em; */
+}
+
+.mob-button span {
+    font-size: 16px;
+}
+
+@keyframes headingload {
+    0% {
+        top: -5em;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes textload {
+    0% {
+        left: -5em;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes iconload {
+    0% {
+        right: -5em;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes iconloadright {
+    0% {
+        right: -5em;
+        opacity: 0;
+    }
+    100% {
+        right: 2.5em;
+        opacity: 1;
+    }
+}
+
+@keyframes iconloadtop {
+    0% {
+        top: -5em;
+        opacity: 0;
+    }
+    100% {
+        top: 2em;
+        opacity: 1;
+    }
+}
+
+@keyframes subheadingload {
+    0% {
+        left: -10em;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes subtextload {
+    0% {
+        right: -10em;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+/* .mob-card:nth-child(2),
+.mob-card:nth-child(3) {
+    margin-top: .2em;
+    height: auto;
+    width: 2.5em;
+    z-index: 100;
+}
+
+.mob-card:nth-child(2) img,
+.mob-card:nth-child(3) img {
+    height: auto;
+    width: auto;
+}
+
+.mob-card:nth-child(2) {
+    left: 37vh;
+}
+
+.mob-card:nth-child(3) {
+    left: 41.5vh;
+} */
