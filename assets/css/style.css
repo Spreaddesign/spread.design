@@ -19,7 +19,6 @@ body {
     font-family: var(--roboto);
     scroll-behavior: smooth;
     /* overflow: hidden; */
-    overflow-x: hidden;
     overflow-y: scroll;
 }
 
@@ -208,7 +207,6 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     overflow: hidden !important;
-    z-index: 1000;
     /* height: auto;
     width: 100%; */
 }
@@ -278,7 +276,7 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     justify-content: center;
-/*     z-index: 100; */
+    z-index: 100;
 }
 
 .mob-dot {
