@@ -46,7 +46,7 @@ function mobcardclick1() {
     $('#mob-sub-img-1').css({ display: 'block' })
     $('#mob-subcard-1').css({ display: 'none' })
     $('#mob-submaincard-1').css({ display: 'block' })
-    $('.mob-dots').css({ display: 'none' })
+    $('.mob-chevron').css({ display: 'none' })
     $('#mob-sub-arrow-1').css({ display: 'block' })
 }
 
@@ -55,7 +55,7 @@ function mobcardhide1() {
     $('#mob-sub-img-1').css({ display: 'none' })
     $('#mob-subcard-1').css({ display: 'flex' })
     $('#mob-submaincard-1').css({ display: 'none' })
-    $('.mob-dots').css({ display: 'flex' })
+    $('.mob-chevron').css({ display: 'block' })
     $('#mob-sub-arrow-1').css({ display: 'none' })
 }
 
@@ -64,7 +64,7 @@ function mobcardclick2() {
     $('#mob-sub-img-2').css({ display: 'block' })
     $('#mob-subcard-2').css({ display: 'none' })
     $('#mob-submaincard-2').css({ display: 'block' })
-    $('.mob-dots').css({ display: 'none' })
+    $('.mob-chevron').css({ display: 'none' })
     $('#mob-sub-arrow-2').css({ display: 'block' })
 }
 
@@ -73,7 +73,7 @@ function mobcardhide2() {
     $('#mob-sub-img-2').css({ display: 'none' })
     $('#mob-subcard-2').css({ display: 'flex' })
     $('#mob-submaincard-2').css({ display: 'none' })
-    $('.mob-dots').css({ display: 'flex' })
+    $('.mob-chevron').css({ display: 'block' })
     $('#mob-sub-arrow-2').css({ display: 'none' })
 }
 
@@ -82,7 +82,7 @@ function mobcardclick3() {
     $('#mob-sub-img-3').css({ display: 'block' })
     $('#mob-subcard-3').css({ display: 'none' })
     $('#mob-submaincard-3').css({ display: 'block' })
-    $('.mob-dots').css({ display: 'none' })
+    $('.mob-chevron').css({ display: 'none' })
     $('#mob-sub-arrow-3').css({ display: 'block' })
 }
 
@@ -91,7 +91,7 @@ function mobcardhide3() {
     $('#mob-sub-img-3').css({ display: 'none' })
     $('#mob-subcard-3').css({ display: 'flex' })
     $('#mob-submaincard-3').css({ display: 'none' })
-    $('.mob-dots').css({ display: 'flex' })
+    $('.mob-chevron').css({ display: 'block' })
     $('#mob-sub-arrow-3').css({ display: 'none' })
 }
 
