@@ -9,32 +9,32 @@ function mobmenuclick() {
     $('.mob-icon-right').toggleClass('toggleRight-alt')
 }
 
-function dragcard1() {
-    $('#mob-card-1').css({ display: 'none' })
-    $('#mob-card-2').css({ display: 'block' })
-    $('#mob-card-3').css({ display: 'none' })
-    $('#md-dot-1').removeClass('md-active')
-    $('#md-dot-2').addClass('md-active')
-    $('#md-dot-3').removeClass('md-active')
-}
+// function dragcard1() {
+//     $('#mob-card-1').css({ display: 'none' })
+//     $('#mob-card-2').css({ display: 'block' })
+//     $('#mob-card-3').css({ display: 'none' })
+//     $('#md-dot-1').removeClass('md-active')
+//     $('#md-dot-2').addClass('md-active')
+//     $('#md-dot-3').removeClass('md-active')
+// }
 
-function dragcard2() {
-    $('#mob-card-1').css({ display: 'none' })
-    $('#mob-card-2').css({ display: 'none' })
-    $('#mob-card-3').css({ display: 'block' })
-    $('#md-dot-1').removeClass('md-active')
-    $('#md-dot-2').removeClass('md-active')
-    $('#md-dot-3').addClass('md-active')
-}
+// function dragcard2() {
+//     $('#mob-card-1').css({ display: 'none' })
+//     $('#mob-card-2').css({ display: 'none' })
+//     $('#mob-card-3').css({ display: 'block' })
+//     $('#md-dot-1').removeClass('md-active')
+//     $('#md-dot-2').removeClass('md-active')
+//     $('#md-dot-3').addClass('md-active')
+// }
 
-function dragcard3() {
-    $('#mob-card-1').css({ display: 'block' })
-    $('#mob-card-2').css({ display: 'none' })
-    $('#mob-card-3').css({ display: 'none' })
-    $('#md-dot-1').addClass('md-active')
-    $('#md-dot-2').removeClass('md-active')
-    $('#md-dot-3').removeClass('md-active')
-}
+// function dragcard3() {
+//     $('#mob-card-1').css({ display: 'block' })
+//     $('#mob-card-2').css({ display: 'none' })
+//     $('#mob-card-3').css({ display: 'none' })
+//     $('#md-dot-1').addClass('md-active')
+//     $('#md-dot-2').removeClass('md-active')
+//     $('#md-dot-3').removeClass('md-active')
+// }
 
 function clickdot1() {
     $('#mob-card-1').css({ display: 'none' })
