@@ -276,7 +276,6 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     justify-content: center;
-    z-index: 100;
 }
 
 .mob-dot {
@@ -285,6 +284,7 @@ body::-webkit-scrollbar {
     border-radius: 2em;
     border: .18em solid var(--color-light);
     transition: 1s ease;
+    z-index: 100;
 }
 
 .md-active {
