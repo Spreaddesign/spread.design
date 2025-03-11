@@ -232,6 +232,7 @@ body::-webkit-scrollbar {
 
 .mob-arrow-front {
     position: relative;
+    top: -2.5em;
     height: 1.5em;
     width: 1.5em;
     animation: iconload 1s linear;
