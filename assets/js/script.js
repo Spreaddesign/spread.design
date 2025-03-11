@@ -9,14 +9,6 @@ function mobmenuclick() {
     $('.mob-icon-right').toggleClass('toggleRight-alt')
 }
 
-function mobarrowleft1() {
-    $('#mob-card-1').css({ display: 'none' })
-    $('#mob-card-2').css({ display: 'none' })
-    $('#mob-card-3').css({ display: 'block' })
-    $('#mobarrowleft-3').css({ opacity: '1' })
-    $('#mobarrowright-3').css({ opacity: '50%' })
-}
-
 function mobarrowleft2() {
     $('#mob-card-1').css({ display: 'block' })
     $('#mob-card-2').css({ display: 'none' })
@@ -47,14 +39,6 @@ function mobarrowright2() {
     $('#mob-card-3').css({ display: 'block' })
     $('#mobarrowleft-3').css({ opacity: '1' })
     $('#mobarrowright-3').css({ opacity: '50%' })
-}
-
-function mobarrowright3() {
-    $('#mob-card-1').css({ display: 'block' })
-    $('#mob-card-2').css({ display: 'none' })
-    $('#mob-card-3').css({ display: 'none' })
-    $('#mobarrowleft-1').css({ opacity: '50%' })
-    $('#mobarrowright-1').css({ opacity: '1' })
 }
 
 function mobcardclick1() {
