@@ -281,8 +281,6 @@ body::-webkit-scrollbar {
 .mob-dot {
     height: 1em;
     width: 1em;
-/*     height: .65em;
-    width: .65em; */
     border-radius: 2em;
     border: .18em solid var(--color-light);
     transition: 1s ease;
@@ -295,7 +293,7 @@ body::-webkit-scrollbar {
 
 .mob-dot:nth-child(1),
 .mob-dot:nth-child(2) {
-    margin-right: .5em;
+    margin-right: 1.5em;
 }
 
 .mobRotate {
