@@ -384,7 +384,7 @@ body::-webkit-scrollbar {
 .mob-buttons {
     display: flex;
     flex-wrap: wrap;
-    width: 150px;
+    width: 350px;
 }
 
 .mob-button {
