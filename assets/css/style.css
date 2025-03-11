@@ -1,4 +1,4 @@
-@import url(/assets/fonts/roboto/roboto.css);
+@import url(assets/fonts/roboto/roboto.css);
 
 :root {
     --color-primary: #5d15c1;
@@ -18,7 +18,6 @@ body {
     background: var(--color-light);
     font-family: var(--roboto);
     scroll-behavior: smooth;
-    /* overflow: hidden; */
     overflow-y: scroll;
 }
 
@@ -43,7 +42,7 @@ body::-webkit-scrollbar {
 
 /* navbar mobile */
 .nav-mob {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -54,7 +53,6 @@ body::-webkit-scrollbar {
     align-items: center;
     z-index: 100;
     background: var(--color-light);
-    /* border: .01em solid blue; */
 }
 
 .nav-mob img {
@@ -66,7 +64,6 @@ body::-webkit-scrollbar {
     justify-content: center;
     height: 2.5em;
     width: 2.5em;
-    /* border: .01em solid red; */
     overflow: hidden;
 }
 
@@ -126,6 +123,9 @@ body::-webkit-scrollbar {
     .main {
         display: none;
     }
+    .nav-mob {
+        display: flex !important;
+    }
     .main-mob {
         display: block !important;
     }
@@ -135,10 +135,7 @@ body::-webkit-scrollbar {
     .mob-landscape-mode {
         display: flex !important;
     }
-    .main {
-        display: none !important;
-    }
-    .main-mob {
+    .nav-mob, .main, .main-mob {
         display: none !important;
     }
 }
@@ -177,7 +174,7 @@ body::-webkit-scrollbar {
 
 /* Main - Mobile */
 .main-mob {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -193,7 +190,6 @@ body::-webkit-scrollbar {
 .mobsection1 {
     position: relative;
     top: 4.8em;
-    /* padding: 74.5px 0 0 0; */
 }
 
 .mob-cards {
@@ -207,8 +203,6 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     overflow: hidden !important;
-    /* height: auto;
-    width: 100%; */
 }
 
 .mob-card:nth-child(1) {
@@ -241,12 +235,6 @@ body::-webkit-scrollbar {
     height: 1.5em;
     width: 1.5em;
     animation: iconload 1s linear;
-    /* transition: 1s ease; */
-    /* height: 1.8em;
-    width: 1.8em; */
-    /* position: fixed;
-    bottom: 10em;
-    right: 2em; */
 }
 
 .mob-texts {
@@ -258,7 +246,6 @@ body::-webkit-scrollbar {
     font-weight: 100;
     font-size: 24px;
     animation: headingload 1s linear;
-    /* width: 180px; */
 }
 
 .mob-text {
@@ -269,35 +256,22 @@ body::-webkit-scrollbar {
     animation: textload 1s linear;
 }
 
-.mob-dots {
-    display: flex;
+.mob-arrow-left,
+.mob-arrow-right {
     position: absolute;
-    top: 88vh;
-    left: 0;
-    right: 0;
-    justify-content: center;
+    height: 2em;
+    width: 2em;
+    top: 40vh;
+    opacity: 50%;
 }
 
-.mob-dot {
-    height: 1em;
-    width: 1em;
-    border-radius: 2em;
-    border: .18em solid var(--color-light);
-    transition: 1s ease;
-    z-index: 100;
+.mob-arrow-left {
+    left: .5em;
 }
 
-.md-active {
-    background: var(--color-light);
-}
-
-.mob-dot:nth-child(1),
-.mob-dot:nth-child(2) {
-    margin-right: 1.5em;
-}
-
-.mobRotate {
-    transform: rotate(-45deg);
+.mob-arrow-right {
+    right: .5em;
+    opacity: 1;
 }
 
 .mob-sub-img {
@@ -357,7 +331,6 @@ body::-webkit-scrollbar {
 
 .mob-main-arrow-back {
     position: absolute;
-    /* top: 2em; */
     top: 1em;
     right: 2.5em;
     height: 1.5em;
@@ -414,7 +387,6 @@ body::-webkit-scrollbar {
     height: 24px;
     width: 24px;
     margin-right: .5em;
-    /* margin-right: .85em; */
 }
 
 .mob-button span {
@@ -497,25 +469,3 @@ body::-webkit-scrollbar {
         opacity: 1;
     }
 }
-
-/* .mob-card:nth-child(2),
-.mob-card:nth-child(3) {
-    margin-top: .2em;
-    height: auto;
-    width: 2.5em;
-    z-index: 100;
-}
-
-.mob-card:nth-child(2) img,
-.mob-card:nth-child(3) img {
-    height: auto;
-    width: auto;
-}
-
-.mob-card:nth-child(2) {
-    left: 37vh;
-}
-
-.mob-card:nth-child(3) {
-    left: 41.5vh;
-} */
